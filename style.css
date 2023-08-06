@@ -1,0 +1,17 @@
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.label {
+font-weight: 100;
+width: 100%;
+}
+
+button{
+    width: 100%;
+    padding: 10px 10px;
+    border: ;
+}
