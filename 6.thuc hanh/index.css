@@ -468,3 +468,8 @@ footer {
   font-size: 32px;
   font-weight: 600;
 }
+
+
+.check {
+  background-color: red;
+}
