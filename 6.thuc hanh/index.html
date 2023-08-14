@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    
+  </head>
+  <body>
+   
+    <div class="header">
+        <div class="header_left-items">
+            <div class="header_logo">
+                <img src="https://th.bing.com/th?id=OIP.o12iSLhliHRhCtsp3nBptgHaGr&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2
+                " alt="" style="width: 48px;">
+            </div>
+            <b>TripGuide</b>
+        </div>
+        <div class="header_user">
+            <select name="country" id="user_country">
+                <option value="">USA</option>
+                <option value="">Viet Nam</option>
+                <option value="">Japan</option>
+                <option value="">China</option>
+            </select>
+
+            <i class="fa-solid fa-bell"></i>
+            <div class="user_avata"> 
+                <img src="./img/296470172_2013502835523813_221008675517205166_n.jpg
+                " alt="" style="width: 36px;">
+                <span>DatDT</span>
+            </div>
+
+            <select name="username" id="user_select">
+                <option value=""></option>
+            </select>
+            
+        </div>
+
+        
+    </div>
+
+    <div class="container">
+      <div class="container__wrapper">
+        <section class="navigate">
+          <span>Home</span>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+          <span>Hotel list</span>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+          <span>Hotel detail</span>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+          <span>Confirm and pay</span>
+        </section>
+
+        <section class="container__information">
+          <h1 class="information__title">Confirm your Book</h1>
+
+          <div class="container__yourtour">
+            <h2 class="yourtour_title">Your tour</h2>
+            <div class="container__input">
+              <div class="container__input--date">
+                <label for="data">Date</label>
+                <input type="date" id="data" disabled />
+              </div>
+              <label for="data"><i class="fa-regular fa-pen-to-square"></i></label>
+            </div>
+            <div class="container__input">
+              <div class="container__input--date">
+                <label for="text">Traveller</label>
+                <input type="text" id="text" value="1 passenger" disabled />
+              </div>
+              <label for="text"><i class="fa-regular fa-pen-to-square"></i></label>
+            </div>
+          </div>
+          <div class="container__creditCards">
+            <h2>Credit Cards</h2>
+            <div class="payment-method">
+              <div class="payment active">
+                <img src="https://github.com/ChuNguyenChuong/HN_PTHB-230726/blob/main/asset/Mastercard-logo.svg.png?raw=true
+                " alt="" />
+              </div>
+              <div class="payment">
+                <img src="https://github.com/ChuNguyenChuong/HN_PTHB-230726/blob/main/asset/Paypal.png?raw=true
+                " alt="" />
+              </div>
+              <div class="payment">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgBQtNXGYpfCipHXWek9OSXunr50VEZkrxyECpjanAA&s
+                " alt="" />
+              </div>
+              <div class="payment">
+                <img src="https://github.com/ChuNguyenChuong/HN_PTHB-230726/blob/main/asset/american-express.png?raw=true
+                " alt="" />
+              </div>
+            </div>
+            <div class="payment__card">
+              <div class="payment__card--item payment__card--blue">
+                <div class="icon">
+                  <i class="fa-solid fa-atom"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="infor">
+                  <div>9848. xxxx xxxx7894 </div>
+                  <div class="name">
+                    <span>DatDT</span>
+                    <img src="https://github.com/ChuNguyenChuong/HN_PTHB-230726/blob/main/asset/Mastercard-logo.svg.png?raw=true" alt="" width="50" />
+                  </div>
+                </div>
+              </div>
+              <div class="payment__card--item payment__card--green">
+                <div class="icon">
+                  <i class="fa-solid fa-atom"></i>
+                  
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="infor">
+                  <div>9848. xxxx xxxx 7894</div>
+                  <div class="name">
+                    <span>DatDT</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgBQtNXGYpfCipHXWek9OSXunr50VEZkrxyECpjanAA&s" alt="" width="50" />
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-number">
+                <label for="card_number">Card Number</label>
+                <input type="text" id="card_number" />
+              </div>
+              <div class="card-more">
+                <div class="card-number">
+                  <label for="card_number">Card Number</label>
+                  <input type="text" id="card_number" />
+                </div>
+                <div class="card-number">
+                  <label for="card_number">Card Number</label>
+                  <input type="text" id="card_number" />
+                </div>
+              </div>
+
+              <div class="check-box">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox">Save Card</label>
+              </div>
+              <button class="confirm-btn">Confirm and reserve</button>
+            </div>
+          </div>
+
+          <div class="bookdetail">
+            <h2>Switzerland Hotal and Places to Stay</h2>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              4.8 <span>(122 reviews)</span>
+            </div>
+            <img src=https://th.bing.com/th/id/OIP.9kbvUbYeWDtpe5wbFGvQrwHaEK?w=296&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7
+             alt="loi anh" width="500px" height="150px"/>
+            <div>1 bedroom + 1 private room</div>
+
+            <div class="check-in-out">
+              <div class="check-in">
+                <div>check in</div>
+                <div>june 27, 2020</div>
+              </div>
+              <div class="check-out">
+                <div>check in</div>
+                <div>june 27, 2020</div>
+              </div>
+            </div>
+
+            <div>
+              <div>Guest</div>
+              <div>2 guests</div>
+            </div>
+
+            <div class="detail">
+              <h2>Booked details</h2>
+              <div class="detail-item">
+                <div class="item-title">$119 + 5 night</div>
+                <div>$833</div>
+              </div>
+              <div class="detail-item">
+                <div class="item-title">$119 + 5 night</div>
+                <div>$833</div>
+              </div>
+              <div class="detail-item">
+                <div class="item-title">$119 + 5 night</div>
+                <div>$833</div>
+              </div>
+              <div class="detail-item active">
+                <div class="item-title">Total</div>
+                <div>$833</div>
+              </div>
+            </div>
+
+            <div class="report">
+              <span>Report this property</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="container__contact">
+          <h2>Get out pro offers</h2>
+          <div class="contact__input">
+            <div class="input__label">
+              <span>
+                Lunar New Year Festival often falls between late January and early February; it is among the most important holidays in Vietnam
+                
+              </span>
+            </div>
+            <div class="contact__input--btn">
+              <input placeholder="Enter your email" type="text" />
+              <button>submit</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__logo">
+        <img src=".//asset../logo.png" alt="" width="200" />
+        <span
+          >Lunar New Year Festival often falls between late January and early February; it is among the most important holidays in Vietnam
+          </span
+        >
+        <div class="mode">
+          <div class="icon active">
+            <i class="fa-regular fa-sun"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-regular fa-moon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li>Service</li>
+          <li>Travel Booking</li>
+          <li>Flight Booking</li>
+          <li>Car Booking</li>
+          <li>Fivestar Hotel</li>
+          <li>Traveling</li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li>Service</li>
+          <li>Travel Booking</li>
+          <li>Flight Booking</li>
+          <li>Car Booking</li>
+          <li>Fivestar Hotel</li>
+          <li>Traveling</li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li>Service</li>
+          <li>Travel Booking</li>
+          <li>Flight Booking</li>
+          <li>Car Booking</li>
+          <li>Fivestar Hotel</li>
+          <li>Traveling</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
