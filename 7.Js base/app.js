@@ -13,8 +13,8 @@ let sum = ly + hoa + sinh;
 
 let average = tong / 3;
 
-document.write("Tông điểm 3 môn:" = tong)
-document.write("Điểm trung bình 3 môn:" = trungBinh)
+console.log("Tông điểm 3 môn:" , sum)
+console.log("Điểm trung bình 3 môn:" ,  average)
 //bai 2
 
 let inputDoC = prompt("Nhập vào độ C")
@@ -23,17 +23,20 @@ let Celsius  = parseInt(inputDoC);
 
 let Fahrenheit =  Celsius * (9 / 5)  + 32;
 
-
+console.log("do F la :" , Fahrenheit)
 //bai 3 +4
-let pi =   3.141592653589 ;
 
 let banKinh = prompt("Nhập vào bán kính hình tròn");
+
+let pi =   3.141592653589 ;
 
 let R = parseInt(banKinh);
 
 let dienTich = R * R * pi;
 let chuVi = R * 2 * pi;
-3
+console.log("dien tich hinh tron la" , dienTich)
+console.log("chu vi hinh tron la", chuVi)
+
 //Bài Tập Javascript Basic
 //bai 1
  console.log("wellcome to Rikkei Academy");

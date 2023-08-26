@@ -131,123 +131,87 @@
 
 //  BÀI 7
 
-// 7.1
-
-let sheeps =[5,7,300,90,24,50,75]
-console.log("xin chào đây là đàn cừu của tôi", sheeps);
-
-// 7.2 tim con cuu lon nhat
-
-let maxsheeps =sheeps [0]
-for(let i=1 ; i< sheeps.length ; i++)
-{
-   const sheep = sheeps[i];
-   if(sheep > maxsheeps) 
-   {
-      maxsheeps = sheep
-   }
-}
- console.log (`con cừu lớn nhất của tôi có kích thước ${ maxsheeps} , hãy thiến nó.`);
- 
-//  7.3 reset con cừu lớn nhất về 8
-
-const indexmaxsheep = sheeps.indexOf(maxsheeps);
-let newsheeps =[]
-for (let i= 0 ; i< sheeps.length ; i++)
-{
-   const element = sheeps [i];
-   if (indexmaxsheep==i)
-   {
-      newsheeps.push (8)
-   }
-   else
-   {
-      newsheeps.push(element)
-   }
-}
- console.log("sau khi thien day la dan cuu cua toi" , newsheeps );
-
-//  7.4 : tag kich thuoc dan cuu len 50kg
-
- let sheepsAftermonth =[]
- for(let i = 0 ; i< newsheeps.length ; i++ ) 
- {
-   const sheep = newsheeps[i];
-   let newsheep = sheep + 50 ;
-   sheepsAftermonth.push(newsheep);
- }
- console.log("da 1 thang troi qua,bay cuu cua toi da lon,day la kich thuoc cua no :" , sheepsAftermonth) ;
-
-//  7.5 tim con cuu lon nhat va thien No
-
- let maxsheep1 =sheeps [0]
- for(let i=1 ; i< sheepsAftermonth.length ; i++)
-{
-   const sheep = sheepsAftermonth[i];
-   if(sheep > maxsheep1) 
-   {
-      maxsheep1 = sheep
-   }
-}
- console.log(`con cừu lớn nhất của tôi có kích thước ${maxsheep1} , hãy thiến nó.`);
-// reset con cuu ve 8kg
- const indexmaxsheep1 = sheepAftermonth.indexOf(maxsheep1);
- let newsheeps1 =[]
- for (let i= 0 ; i< sheepAftermonth.length ; i++)
- {
-    const element = sheepAftermonth[i];
-    if (indexmaxsheep1==i)
-    {
-       newsheeps1.push (8)
+let sheeps = [5, 7, 300, 90, 24, 50, 75]
+console.log ("-Xin chào, đay là kích thước đàn cừu của tôi:",sheeps)
+let max = sheeps[0]
+for (let i = 1; i < sheeps.length; i++){
+    let sheeps1 = sheeps[i]
+    let maxsheeps = sheeps1
+    if (maxsheeps > max){
+        max = maxsheeps
     }
-    else
-    {
-       newsheeps1.push(element)
-    }
- }
-  console.log("sau khi thien day la dan cuu cua toi" , newsheeps1 );
-   
-  for(let i = 0; i < 3 ;i++) 
-  //   tang kich thuoc dan cuu
-{
-   console.log (`month ${i+1}`);
-
-   let sheepAftermonth =[]
-   for(let i = 0 ; i< newsheeps1.length ; i++ ) 
-   {
-     const sheep = newsheeps1[i];
-     let newsheep = sheep + 50 ;
-     sheepAftermonth.push(newsheep)
-   }
-  console.log("da 1 thang troi qua,khich thuoc dan cuu cua toi la :", sheepAftermonth);
 }
-//   // tim ra con lon nhat de thien no
-//   let maxsheep2 =sheeps [0]
-//   for(let i=1 ; i< sheepAftermonth.length ; i++)
-//   {
-//      const sheep = sheepAftermonth[i];
-//      if(sheep > maxsheep2) 
-//      {
-//         maxsheep2 = sheep
-//      }
-//   }
-//   console.log(` con cuu lon nhat cua toi co kich thuoc ${maxsheep2} ,hay thien no`)
-  
-//   const indexmaxsheep2 = sheepAftermonth.indexOf(maxsheep2);
-//   let newsheeps2 =[]
-//   for (let i= 0 ; i< sheepAftermonth.length ; i++)
-//   {
-//      const element = sheepAftermonth[i];
-//      if (indexmaxsheep2==i)
-//      {
-//         newsheeps2.push (8)
-//      }
-//      else
-//      {
-//         newsheeps2.push(element)
-//      }
+console.log ("-Con cừu có kích thước lớn nhất là: ", max , ", hãy cạo lông nó")
+
+let indexMax = sheeps.indexOf(max)
+sheeps[indexMax] = 8
+console.log ("-Sau khi cạo lông đây là đàn cừu của tôi: " ,sheeps)
+
+let newsheep = sheeps.map(after1month)
+function after1month(sheeps){
+    return sheeps + 50;
+}
+console.log ("-Đây là đàn cừu của tôi sau 1 tháng: " ,newsheep)
+
+max = newsheep[0]
+for (let i = 1; i < newsheep.length; i++){
+    let sheeps1 = newsheep[i]
+    let maxsheeps = sheeps1
+    if (maxsheeps > max){
+        max = maxsheeps
+    }
+}
+console.log ("-Con cừu có kích thước lớn nhất là: ", max , ", hãy cạo lông nó")
+
+indexMax = newsheep.indexOf(max)
+newsheep[indexMax] = 8
+console.log ("-Sau khi cạo lông đây là đàn cừu của tôi: " ,newsheep)
+//Tháng 2
+let newsheeps1 = newsheep.map(after2month)
+function after2month(newsheep){
+    return newsheep + 50;
+}
+console.log ("-Đây là đàn cừu của tôi sau 1 tháng tiếp theo: " ,newsheeps1)
+
+max = newsheeps1[0]
+for (let i = 1; i < newsheeps1.length; i++){
+    let sheeps1 = newsheeps1[i]
+    let maxsheeps = sheeps1
+    if (maxsheeps > max){
+        max = maxsheeps
+    }
+}
+console.log ("-Con cừu có kích thước lớn nhất là: ", max , ", hãy cạo lông nó")
+
+indexMax = newsheeps1.indexOf(max)
+newsheeps1[indexMax] = 8
+console.log ("-Sau khi cạo lông đây là đàn cừu của tôi: " ,newsheeps1)
+// Tháng 3
+let newsheep2 = newsheeps1.map(after3month)
+function after3month(newsheeps1){
+    return newsheeps1 + 50;
+}
+console.log ("-Đây là đàn cừu của tôi sau 1 tháng tiếp theo: " ,newsheep2)
+
+max = newsheep2[0]
+for (let i = 1; i < newsheep2.length; i++){
+    let sheeps1 = newsheep2[i]
+    let maxsheeps = sheeps1
+    if (maxsheeps > max){
+        max = maxsheeps
+    }
+}
+console.log ("-Con cừu có kích thước lớn nhất là: ", max , ", hãy cạo lông nó")
+
+indexMax = newsheep2.indexOf(max)
+newsheep2[indexMax] = 8
+console.log ("-Sau khi cạo lông đây là đàn cừu của tôi: " ,newsheep2);
+// Ban cuu
+let sum = 0
+newsheep2.forEach((sheeps) => {
+   sum = sum + sheeps
    
-//     console.log("sau khi cao long dan cuu cua toi :" , newsheeps2);
-//    }
-// }
-//    console.log(" sau 3 thang chan cuu , dan cuu cua toi co khich thuoc la :" , newsheeps2):
+})
+console.log("-tổng cân nặng đàn cừu của tôi la :", sum)
+
+// console.log ("-Chán chăm cừu nên bán được:",KQ * 2,"$")
