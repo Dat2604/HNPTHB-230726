@@ -141,7 +141,7 @@
 //     const sheep = sheeps [i] ;
 //     if (sheep > maxsheep) {
 //         maxsheep = sheep
-//     }
+//     }    
 // }
 // console.log (`con cừu lớn nhất của tôi có kích thước ${maxsheep} , hãy cạo lông nó`);
 // // 7.3 reset con cừu về 8kg

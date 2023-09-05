@@ -168,5 +168,5 @@
             arrayNumber.sort((a,b) => {return b - a})
             console.log(arrayNumber); 
              }
-             maxdenmin([44,4,50,98,26,4])
+             maxdenmin([44,4,50,98,26,6])
      
